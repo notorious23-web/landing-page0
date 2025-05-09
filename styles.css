@@ -1,0 +1,170 @@
+/* Reset some basic stuff */
+body, h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Header */
+  header {
+    background: #1f2937;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #1f2937;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #3882f6;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+  }
+  
+  /* Features Section */
+  .features {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .features h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .feature {
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .feature p {
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  /* Quote Section */
+  .quote {
+    background: #e5e7eb;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .quote blockquote {
+    font-size: 24px;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  .quote footer {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Call to Action Section */
+  .cta {
+    padding: 50px 0;
+  }
+  
+  .cta-box {
+    background: #3882f6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .cta-box button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
