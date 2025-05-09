@@ -5,9 +5,12 @@ body, h1, h2, h3, h4, p, ul {
   }
   
   body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-image: url('grass-texture.jpg');
+    background-repeat: repeat;
   }
+  
+
+  
   
   /* Container */
   .container {
@@ -18,7 +21,7 @@ body, h1, h2, h3, h4, p, ul {
   
   /* Header */
   header {
-    background: #1f2937;
+    background: #16700d9e;
     color: white;
     padding: 20px 0;
   }
@@ -42,10 +45,36 @@ body, h1, h2, h3, h4, p, ul {
   
   /* Hero Section */
   .hero {
-    background: #1f2937;
-    color: white;
-    padding: 50px 0;
+    background: linear-gradient(135deg, #006400, #013220); /* Rich green gradient */
+    color: #fff; /* Clean white text */
+    text-align: center;
+    padding: 80px 20px;
   }
+
+  .hero-content {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);  /* Adds a smooth blur */
+    padding: 25px;
+    border-radius: 15px;
+  }
+  
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFD700; /* Gold/yellow for impact */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adds depth */
+  }
+  
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFD700; /* Gold/yellow for impact */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adds depth */
+  }
+  
+  
   
   .hero .container {
     display: flex;
@@ -69,14 +98,21 @@ body, h1, h2, h3, h4, p, ul {
   }
   
   .hero button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background: #3882f6;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #FFD700;
+    color: #000;
     border: none;
-    color: white;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
+  
+  .hero button:hover {
+    background-color: #FFC300;
+  }
+  
   
   .hero-image img {
     max-width: 100%;
@@ -95,10 +131,12 @@ body, h1, h2, h3, h4, p, ul {
   
   .features-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;       /* Adds more space between images */
     flex-wrap: wrap;
-    gap: 20px;
+    padding: 20px;
   }
+  
   
   .feature {
     max-width: 200px;
@@ -106,9 +144,18 @@ body, h1, h2, h3, h4, p, ul {
   }
   
   .feature img {
-    width: 100%;
-    border-radius: 10px;
+    width: 250px;        /* Makes the images bigger */
+    height: 250px;       /* Keeps them square */
+    object-fit: cover;   /* Ensures the image fills the box without squishing */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a nice shadow */
+    transition: transform 0.3s ease;           /* Adds smooth hover effect */
   }
+  
+  .feature img:hover {
+    transform: scale(1.1); /* Grows image a bit on hover */
+  }
+  
   
   .feature p {
     margin-top: 10px;
